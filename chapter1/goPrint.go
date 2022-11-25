@@ -14,22 +14,22 @@ import "fmt"
 
 func main() {
 // Go fmt.Print()
-  fmt.Print("Hello, ")
+  fmt.Print("Hello,")
   fmt.Print("World!")
   name := "Shadrach"
-  fmt.Print("Name: ", name)
+  fmt.Print("Name: ", name) // outputs adds no new line. Hello,World!Name: Shadrach
 
 // fmt.Println() prints a new line at the end by default.
-  currentSalary := 50000
+  currentSalary := 700000
   // Go fmt.Println
-  fmt.Println("Hello")
-  fmt.Println("World!")
-  fmt.Println("Current Salary:", currentSalary)
+  fmt.Println("Hello")   // 'ln' adds new line to each output. Hello
+  fmt.Println("World!")  // World
+  fmt.Println("Current Salary:", currentSalary) // Current Salary: 700000
 
 // The fmt.Printf(). The 'f' is a format specifier.
-  currentAge := 35
+  currentAge := 36
   // Go fmt.Printf()
-  fmt.Printf("Age = %d", currentAge)
+  fmt.Printf("Age = %d\n", currentAge) // Age = 36.
 
 /* In Go, every data type has a unique format specifier.
   Data Type	Format Specifier
@@ -40,12 +40,12 @@ func main() {
 */
 
   // Using %g to print Float Values
-  var annualSalary float64 = 65000.5
-  fmt.Printf("Annual Salary: %g", annualSalary)
+  var annualSalary float64 = 34000000
+  fmt.Printf("Annual Salary: %g\n", annualSalary) // Annual Salary: 34000000.0
 
   // Using format specifiers to hold value of a variable
-  var myName = "John"
-  age := 35
-  fmt.Printf("%s is %d years old.", myName, age)
+  var myName = "Shadrach"
+  age := 36
+  fmt.Printf("%s is %d years old.\n", myName, age) // Shadrach is 36 years old
 
 }
