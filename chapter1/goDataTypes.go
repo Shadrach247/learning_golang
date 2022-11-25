@@ -2,18 +2,19 @@ package main
 
 import "fmt"
 
-// We use data types in Golang to determine the type of data associated with variables. For example,
+// We use data types in Golang to determine the type of data associated with variables. 
+// For example,
 var age int
 // 'int' is a data type that specifies that the 'age' variable can store integer data.
 
 // The basic data types in Golang: 
 
-// int	Integer numbers. >  8014, 0, -1, 8632
-// float	Numbers with decimal points. >  50.3, 320.74635, -89.20
-// complex	Complex numbers.  >  2+4i, -9.5+18.3i
-// string	Sequence of characters.	>  "Hello Golang!", "5 is less than 7"
-// bool	either true or false. >  true, false
-// byte	A byte (8 bits) of non-negative integers. >  9, 216, 77
+// int	Integer numbers. | 8014, 0, -1, 8632
+// float	Numbers with decimal points. |  50.3, 320.74635, -89.20
+// complex	Complex numbers.  |  2+4i, -9.5+18.3i
+// string	Sequence of characters.	|  "Hello Golang!", "5 is less than 7"
+// bool	either true or false. |  true, false
+// byte	A byte (8 bits) of non-negative integers. |  9, 216, 77
 // rune	Used for characters. Internally used as 32-bit integers. 'a', '7', '<'
 
 // 1. Integer Data Type
@@ -49,8 +50,7 @@ func main() {
 // The float type is used to hold values with decimal points. e.g, 6.7, -34.2
 
 // Keywords used: float32, float64
-
-// an example,
+// An example,
 // var salaryA float64
 // There are two sizes of floating-point data in Go programming.
 // Data Type	Size

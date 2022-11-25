@@ -73,9 +73,9 @@ func main() {
   const daysOfCode = 100 // initial value
  // Error! Constants cannot be changed
   daysOfCode = 500
- // We cannot use the shorthand notation := to create constants. For example,
- // Error code
-  const months := 12
+
+ // We cannot use the shorthand notation := to create constants.
+  const months := 12   // Error code
 
 
 }
