@@ -48,15 +48,10 @@ This is because in Go, the switch statement terminates after the first matching 
 	}	  
 }
 
-/*
-Go switch case with fallthrough
-If we need to execute other cases after the matching case, 
-we can use fallthrough inside the case statement.
-*/
 
-// Program to print the day of the week using fallthrough in switch
-
-func DOB () {
+// Go switch case with fallthrough
+// Program to print the day of Birth using fallthrough in switch
+func dob() {
 
 	birthMonth := 2
 
@@ -86,12 +81,16 @@ func DOB () {
 		  
 	default:
 	  fmt.Println("Invalid day")
-  
-	}
 
+/*
+If we need to execute other cases after the matching case, 
+we can use fallthrough inside the case statement.
+*/
+	}
+}
+
+func dow() {
 // 	Go switch with multiple cases
-//  We can also use multiple values inside a single case block. 
-//  In such case, the case block is executed if the expression matches with one of the case values.
 dayOfWeek := "Sunday"
 
   switch dayOfWeek {
@@ -103,7 +102,11 @@ dayOfWeek := "Sunday"
 
     default:
       fmt.Println("Invalid day")
+// We can also use multiple values inside a single case block. 
+// In such case, the case block is executed if the expression matches with one of the case values.
     }
+}
+
 /*
 In the above example, we have used multiple values for each case:
 # case "Saturday", "Sunday" - executes if dayOfWeek is either Saturday or Sunday
@@ -111,6 +114,7 @@ In the above example, we have used multiple values for each case:
 */
 
 // Golang switch without expression
+func nod() {
 numberOfDays := 28
 
 // Switch without any expression
@@ -122,6 +126,7 @@ switch {
 		   
   default:
 	fmt.Println("Not February")
+ 	}
 }
 // In the above example, switch doesn't have an expression. 
 // Hence, the statement is true.
@@ -134,35 +139,36 @@ The statement and expression are separated by semicolons
 */
 
 // switch with statement
-switch day := 4; day {
+func d() {
+switch day := 6; day {
 
-case 1:
-  fmt.Println("Sunday")
+	case 1:
+	fmt.Println("Sunday")
 
-case 2:
-  fmt.Println("Monday")
+	case 2:
+	fmt.Println("Monday")
 
-case 3:
-  fmt.Println("Tuesday")
+	case 3:
+	fmt.Println("Tuesday")
 
-case 4:
-  fmt.Println("Wednesday")
+	case 4:
+	fmt.Println("Wednesday")
 
-case 5:
-  fmt.Println("Thursday")
+	case 5:
+	fmt.Println("Thursday")
 
-case 6:
-  fmt.Println("Friday") 
+	case 6:
+	fmt.Println("Friday") 
 
-case 7:
-  fmt.Println("Saturday")
+	case 7:
+	fmt.Println("Saturday")
 
-default:
-  fmt.Println("Invalid Day!")
+	default:
+	fmt.Println("Invalid Day!")
+	}
 }
 /*
-we have used the optional statement day := 4 along with the expression day. 
-It matches case 4 and hence, Wednesday is printed.
+we have used the optional statement day := 6 along with the expression day. 
+It matches case 6 and hence, Friday is printed.
 */
 
-}
