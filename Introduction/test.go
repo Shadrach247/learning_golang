@@ -1,24 +1,14 @@
-package main
+// Slice is a collection of types of data, just like arrays.
+// However, unlike arrays, slice doesn't hava a fixed size. 
 
-import (
-	"fmt"
-	"math"
-)
+// A slice in Golang
+numbers := []int{2, 4, 6, 8, 15}
 
-func main() {
-	var x, y int = 3, 4
-	var f float64 = math.Sqrt(float64(x*x + y*y))
-	var z uint = uint(f)
-	fmt.Println(x, y, z)
+// The bracket [] notation was left empty. 
+// This is because we can add elements to a slice and change its size.
 
-  /*
-  var num1 int = 90
-  var num2 float32 = 8.7
-  var sum float32
- 
-  // addition of different data types
-  sum = float32(num1) + num2
+// this is an array
+num := [5]int{2, 4, 6, 8, 15}
 
-  fmt.Printf("Sum is %g",sum)
-  */
-}
+// this is a slice
+numb := []int{2, 4, 6, 8, 15}
