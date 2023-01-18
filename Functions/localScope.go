@@ -11,12 +11,12 @@ func addNumbers() {
 	// local variables
 	var sum int
 	sum = 12 + 8
+	fmt.Println(sum)
 }
 
 func main() {
 
 	addNumbers()
 
-	// cannot access sum out of its local scope
-	fmt.Println("Sum is", sum)
+	// fmt.Println("Sum is", sum) cannot access sum out of its local scope
 }
